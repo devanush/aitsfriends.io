@@ -46,12 +46,12 @@
 
         <script type="text/javascript">
             // Set the date we're counting down to
-var new year Date    = new Date("jan 1, 2020 00:00:000").getTime();
+var newyearDate    = new Date("jan 1, 2020 00:00:000").getTime();
 var countDownDate3      = new Date("dec 30, 2019 00:00:000").getTime();
 // Update the count down every 1 second
 var x = setInterval(function() {
     // Find the distance between now and the count down date
-    var distance    = getReminderTime('timer1', new year Date);
+    var distance    = getReminderTime('timer1', newyearDate);
     
     // If the count down is over, write some text 
     if (distance < 0) {
@@ -77,17 +77,20 @@ function getReminderTime(eleId, countDownDate) {
     
     return distance;
 }
-alert("It's Party time");
+alert("Party time is comming");
         </script>
         <style type="text/css">
-            body {
+            
+              .box{
+                margin-left: 30%;
+              
   font-family: Arial;
   color: white;
   padding-left:25px;
 }
 .split {
   height: 100%;
-  z-index: 1;
+  /*z-index: 1;  */
   
 }
 .left {
@@ -135,11 +138,12 @@ p {
     color:#FFFFFF;
 }
         </style>
+        <div class="box">
         <div class="container-fluid" style="margin-top:10px">
             <div class="row">
                 <div class="col-sm-6">
                     <div class="card" id="hero-img1">
-                        <div class="card-header bg-info text-center">HAPPY NEW YEAR</div>
+                        <div class="card-header bg-info text-center">ADVANCED HAPPY NEW YEAR 2020</div>
                         <div class="card-body left">
                             <div class="split">
                                 <div class="centered">
@@ -156,8 +160,9 @@ p {
             </div>
         </div>
 
-	<h2>Click photos</h2>
+	</div>
 <div class="Success">
+  <h2>Click photos</h2>
 	<img src="photos\arun.jpg"><span></span>
 	<img src="photos\bala.jpg"><span></span>
 	<img src="photos\balaji.jpg"><span></span>
