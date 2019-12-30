@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<!--
+
+        <title>Page Title</title>
+        <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    -->
 	<title>Success</title>
 	<style type="text/css">
 		.Success{
@@ -34,7 +41,123 @@
 		}
 	</style>
 </head>
-<body><h2>Click photos</h2>
+<body>
+
+
+        <script type="text/javascript">
+            // Set the date we're counting down to
+var new year Date    = new Date("dec 8, 2019 00:00:000").getTime();
+var countDownDate3      = new Date("nov 5, 2019 00:00:000").getTime();
+// Update the count down every 1 second
+var x = setInterval(function() {
+    // Find the distance between now and the count down date
+    var distance    = getReminderTime('timer1', new year Date);
+    
+    // If the count down is over, write some text 
+    if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("timer1").innerHTML = "HAPPY NEW YEAR<br><br>2020";
+    }
+}, 1000);
+function getReminderTime(eleId, countDownDate) {
+    // Get today's date and time
+    var now         = new Date().getTime();
+    
+    // Find the distance between now and the count down date
+    var distance    = countDownDate - now;
+    
+    // Time calculations for days, hours, minutes and seconds
+    var days        = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours       = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes     = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds     = Math.floor((distance % (1000 * 60)) / 1000);
+    
+    // Output the result in an element with id="demo"
+    document.getElementById(eleId).innerHTML = "Left " + days + " Day " + hours + " Hour " + minutes + " Minutes " + seconds + " Seconds";
+    
+    return distance;
+}
+alert("It's Party time");
+        </script>
+        <style type="text/css">
+            body {
+  font-family: Arial;
+  color: white;
+  padding-left:25px;
+}
+.split {
+  height: 100%;
+  z-index: 1;
+  
+}
+.left {
+  background-color: brown;
+}
+.right {
+  background-color: #111;
+}
+.centered {
+  right: 50%;
+  left: 50%;
+  text-align: center;
+}
+.centered img {
+  width: 100px;
+  height: 100px;
+  border-radius: 70%;
+}
+h6 a, #gift a {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 15px;
+  margin-right:5px;
+  color: #FFFFFF;
+  background-color: red;
+  text-align: center;
+  cursor: pointer;
+}
+h6 a:hover {
+    text-decoration:none;
+    color:#FFFFFF;
+}
+.card {
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
+    margin-bottom:10px;
+}
+p {
+    font-size:18px;
+    font-weight:bold;
+}
+.card-header {
+    font-size:20px;
+    font-weight:bold;
+    color:#FFFFFF;
+}
+        </style>
+        <div class="container-fluid" style="margin-top:10px">
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card" id="hero-img1">
+                        <div class="card-header bg-info text-center">Birthday of Swamy</div>
+                        <div class="card-body left">
+                            <div class="split">
+                                <div class="centered">
+                                  // <img src="Swamy.jpg" alt="Swamy"  class="center" height="35"/></a>
+    <br />                                <p>(December 05, 1995)</p>
+                                  
+                                    <p id="timer1" class="text-center"></p>
+                                    <p id="gift" class="text-center"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    //<a href="click.HTML" style="font-size: 20px;">Click Me</a>
+
+	<h2>Click photos</h2>
 <div class="Success">
 	<img src="photos\arun.jpg"><span></span>
 	<img src="photos\bala.jpg"><span></span>
